@@ -1,25 +1,28 @@
-# The Heart & Plate Homepage
+# The Heart & Plate GitHub Pages Website
 
-A GitHub Pages-ready static homepage for The Heart & Plate.
+Static multi-page responsive website for The Heart & Plate.
+
+## Included pages
+
+- `index.html` — homepage
+- `about.html` — about page
+- `menu.html` — full responsive menu page
+- `gallery.html` — lightweight gallery page
+- `contact.html` — contact page
+- `order-online.html` — pickup and delivery partner page
 
 ## Files
 
-- `index.html` — homepage
-- `styles.css` — responsive mobile-first styling
-- `script.js` — hamburger menu and current-year footer
-- `assets/logo.png` — brand logo
-- `CNAME` — custom domain for GitHub Pages
+- `styles.css` — mobile-first responsive CSS using the Heart & Plate design system
+- `script.js` — hamburger menu and year update
+- `assets/logo.png` — logo asset
+- `CNAME` — custom domain file for `theheartandplate.com`
 
-## GitHub Pages setup
+## GitHub Pages
 
-1. Upload these files to the root of your GitHub repository.
-2. Go to Settings → Pages.
-3. Set source to `Deploy from a branch`.
-4. Select `main` branch and `/root` folder.
-5. Save.
+Upload these files to the root of the repository and publish from `main / root` in GitHub Pages settings.
 
-## Notes
+## Contact
 
-- This homepage is static and fast-loading.
-- CTA links are configured for phone, online order, and Google Maps directions.
-- Placeholder food-card artwork is CSS-based for speed. Replace with real images later if needed.
+Phone: 825-480-8811
+Address: 8157 112 Ave NW, Edmonton, AB T5B 2V1
