@@ -16,7 +16,6 @@ Static multi-page responsive website for The Heart & Plate.
 - `styles.css` — mobile-first responsive CSS using the Heart & Plate design system
 - `script.js` — hamburger menu and year update
 - `assets/logo.png` — logo asset
-- `CNAME` — custom domain file for `theheartandplate.com`
 
 ## GitHub Pages
 
