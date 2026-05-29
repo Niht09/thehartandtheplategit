@@ -876,3 +876,140 @@ p { color: var(--text-soft); }
   .menu-item-card strong { justify-self: start; }
   .gallery-tile { min-height: 190px; }
 }
+
+
+/* Fix pass: cleaner About CTA, real map embeds, and stronger order-online section */
+.visit-card {
+  align-items: center;
+}
+.visit-card .contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.visit-card .contact-actions .btn {
+  width: auto;
+  min-width: 150px;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 12px 22px;
+  align-self: center;
+}
+
+.map-card {
+  display: grid;
+  gap: 16px;
+  overflow: hidden;
+}
+.map-card .btn {
+  justify-self: start;
+}
+.map-embed {
+  width: 100%;
+  min-height: 280px;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: var(--shadow-card);
+  background: var(--plate-cream);
+}
+.contact-layout.map-layout {
+  align-items: stretch;
+}
+.contact-layout.map-layout .map-card,
+.contact-layout.map-layout .contact-form {
+  height: 100%;
+}
+
+.order-options-grid {
+  display: grid;
+  gap: 16px;
+}
+.order-direct-card,
+.delivery-card {
+  background: var(--warm-white);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-card);
+  padding: 22px;
+}
+.order-direct-card {
+  display: grid;
+  gap: 18px;
+  background: linear-gradient(145deg, var(--ribbon-red), var(--ribbon-red-dark));
+  color: var(--warm-white);
+  box-shadow: var(--shadow-lift);
+}
+.order-direct-card h2,
+.order-direct-card p,
+.order-direct-card .eyebrow { color: var(--warm-white); }
+.order-direct-card p { color: rgba(255,252,251,.8); }
+.order-direct-card .eyebrow { color: var(--soft-taco); }
+.order-direct-card .btn-light { justify-self: start; }
+.order-step-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.order-step-list li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  align-items: start;
+  color: rgba(255,252,251,.86);
+}
+.order-step-list span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--warm-white);
+  color: var(--ribbon-red);
+  font-weight: 1000;
+}
+.delivery-card {
+  display: grid;
+  gap: 12px;
+  border: 2px solid rgba(217, 71, 50, .1);
+}
+.delivery-card h3 {
+  margin: 0;
+  color: var(--deep-plum);
+  font-size: 1.3rem;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  font-weight: 1000;
+}
+.delivery-card p { margin-bottom: 2px; }
+.order-note-card {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--radius-large);
+  background: var(--soft-taco);
+  color: var(--deep-plum);
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .visit-card .contact-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .visit-card .contact-actions .btn {
+    width: 100%;
+    min-width: 0;
+  }
+  .map-embed { min-height: 240px; }
+}
+
+@media (min-width: 768px) {
+  .order-options-grid { grid-template-columns: 1.1fr .9fr; align-items: stretch; }
+  .delivery-stack { display: grid; gap: 16px; }
+}
+
+@media (min-width: 1024px) {
+  .map-embed { min-height: 360px; }
+}
